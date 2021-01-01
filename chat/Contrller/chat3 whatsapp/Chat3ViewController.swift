@@ -64,7 +64,7 @@ class Chat3ViewController: UIViewController ,UITableViewDataSource, UITableViewD
         if Mdata.sender == c_user_id{
             cell.send_message.text  = Mdata.message
             cell.time_send.text = Mdata.time
-            cell.back_view.send_roundCorners(radius: 10)
+            cell.back_view.send_roundCorners(radius: 8)
             if !Mdata.attachment.isEmpty{
                 //                if let url = URL(string: Mdata.attachment!) {
                 //                    cell.send_image.af_setImage(withURL: url, placeholderImage: #imageLiteral(resourceName: "cross.png"))
@@ -85,7 +85,7 @@ class Chat3ViewController: UIViewController ,UITableViewDataSource, UITableViewD
         }else{
             cell2.receive_message.text = Mdata.message
             cell2.receice_time.text = Mdata.time
-            cell2.receive_view.receive_roundCorners(radius: 10)
+            cell2.receive_view.receive_roundCorners(radius: 8)
             //            cell2.receive_image.receive_roundCorners(radius: 10)
             if !Mdata.attachment.isEmpty{
                 //                if let url = URL(string: Mdata.attachment!) {
@@ -118,7 +118,7 @@ class Chat3ViewController: UIViewController ,UITableViewDataSource, UITableViewD
         for _ in 0...5{
             let currentDateTime = Date()
             let formatter = DateFormatter()
-            formatter.timeStyle = .medium
+            formatter.timeStyle = .short
             formatter.dateStyle = .none
             let time = formatter.string(from: currentDateTime)
             
@@ -164,7 +164,7 @@ class Chat3ViewController: UIViewController ,UITableViewDataSource, UITableViewD
         param["attachments"] = ""
         let currentDateTime = Date()
         let formatter = DateFormatter()
-        formatter.timeStyle = .medium
+        formatter.timeStyle = .short
         formatter.dateStyle = .none
         let time = formatter.string(from: currentDateTime)
         let m = chat()
