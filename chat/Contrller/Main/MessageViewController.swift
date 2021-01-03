@@ -9,7 +9,7 @@ import UIKit
 
 class MessageViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
 
-    var data = ["Chat With image","Simple","WhatsApp"]
+    var data = ["Chat With image","Simple","WhatsApp","Chat Bubble"]
     @IBOutlet weak var table_View: UITableView!
     
     
@@ -48,6 +48,9 @@ class MessageViewController: UIViewController , UITableViewDelegate, UITableView
              self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 2{
             let vc = storyBoard.instantiateViewController(identifier: "Chat3ViewController")
+             self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 3{
+            let vc = storyBoard.instantiateViewController(identifier: "Chat4ViewController")
              self.navigationController?.pushViewController(vc, animated: true)
         }
     }
