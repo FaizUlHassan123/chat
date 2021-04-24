@@ -3,12 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5E03649E25A20A360047B66F /* Chat4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03649D25A20A360047B66F /* Chat4ViewController.swift */; };
 		5E0364A225A20A8A0047B66F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0364A125A20A8A0047B66F /* File.swift */; };
+		5E0A1C332634204E00E1642F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0A1C322634204E00E1642F /* LoginViewController.swift */; };
+		5E0A1CBA263448A300E1642F /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 5E0A1CB9263448A300E1642F /* SkyFloatingLabelTextField */; };
+		5E86C92D262C359200DC993C /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 5E86C92C262C359200DC993C /* FacebookShare */; };
+		5E86C92F262C359200DC993C /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5E86C92E262C359200DC993C /* FacebookCore */; };
+		5E86C931262C359200DC993C /* FacebookGamingServices in Frameworks */ = {isa = PBXBuildFile; productRef = 5E86C930262C359200DC993C /* FacebookGamingServices */; };
+		5E86C933262C359200DC993C /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 5E86C932262C359200DC993C /* FacebookLogin */; };
 		5EBAAAA32595441300F4C43D /* chat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EBAAAA12595441300F4C43D /* chat.xcdatamodeld */; };
 		5EC62F99259D27FE007CC4AE /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC62F8B259D27FE007CC4AE /* ChatViewController.swift */; };
 		5EC62F9A259D27FE007CC4AE /* Chat2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC62F8D259D27FE007CC4AE /* Chat2ViewController.swift */; };
@@ -31,10 +37,10 @@
 /* Begin PBXFileReference section */
 		5E03649D25A20A360047B66F /* Chat4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat4ViewController.swift; sourceTree = "<group>"; };
 		5E0364A125A20A8A0047B66F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5E0A1C322634204E00E1642F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E0A1C5E26343E2D00E1642F /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		5EBAAA952595441300F4C43D /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBAAAA22595441300F4C43D /* chat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chat.xcdatamodel; sourceTree = "<group>"; };
-		5EBAAAA92595441400F4C43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EC62F7E259D27FD007CC4AE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EC62F84259D27FE007CC4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EC62F86259D27FE007CC4AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		5EC62F8B259D27FE007CC4AE /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E86C933262C359200DC993C /* FacebookLogin in Frameworks */,
+				5E0A1CBA263448A300E1642F /* SkyFloatingLabelTextField in Frameworks */,
+				5E86C931262C359200DC993C /* FacebookGamingServices in Frameworks */,
+				5E86C92D262C359200DC993C /* FacebookShare in Frameworks */,
+				5E86C92F262C359200DC993C /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,14 @@
 				5E0364A125A20A8A0047B66F /* File.swift */,
 			);
 			path = Chat4;
+			sourceTree = "<group>";
+		};
+		5E86C9262626E8AF00DC993C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5E0A1C322634204E00E1642F /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		5EBAAA8C2595441300F4C43D = {
@@ -107,9 +126,8 @@
 				5EC62FCE259D2AEF007CC4AE /* Assets.xcassets */,
 				5EC62F82259D27FE007CC4AE /* Base.lproj */,
 				5EC62FBC259D292F007CC4AE /* SceneDelegate.swift */,
-				5EC62F7E259D27FD007CC4AE /* Info.plist */,
-				5EBAAAA92595441400F4C43D /* Info.plist */,
 				5EBAAAA12595441300F4C43D /* chat.xcdatamodeld */,
+				5E0A1C5E26343E2D00E1642F /* info.plist */,
 			);
 			path = chat;
 			sourceTree = "<group>";
@@ -136,6 +154,7 @@
 		5EC62F89259D27FE007CC4AE /* Contrller */ = {
 			isa = PBXGroup;
 			children = (
+				5E86C9262626E8AF00DC993C /* Login */,
 				5E03649C25A20A180047B66F /* Chat4 bubble */,
 				5EC62F90259D27FE007CC4AE /* chat3 whatsapp */,
 				5EC62F8C259D27FE007CC4AE /* Chat2 image */,
@@ -237,6 +256,13 @@
 			dependencies = (
 			);
 			name = chat;
+			packageProductDependencies = (
+				5E86C92C262C359200DC993C /* FacebookShare */,
+				5E86C92E262C359200DC993C /* FacebookCore */,
+				5E86C930262C359200DC993C /* FacebookGamingServices */,
+				5E86C932262C359200DC993C /* FacebookLogin */,
+				5E0A1CB9263448A300E1642F /* SkyFloatingLabelTextField */,
+			);
 			productName = chat;
 			productReference = 5EBAAA952595441300F4C43D /* chat.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +290,10 @@
 				Base,
 			);
 			mainGroup = 5EBAAA8C2595441300F4C43D;
+			packageReferences = (
+				5E86C92B262C359200DC993C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				5E0A1CB8263448A300E1642F /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+			);
 			productRefGroup = 5EBAAA962595441300F4C43D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -296,6 +326,7 @@
 				5EC62FA1259D2861007CC4AE /* ImagePicker.swift in Sources */,
 				5EBAAAA32595441300F4C43D /* chat.xcdatamodeld in Sources */,
 				5EC62F9C259D27FE007CC4AE /* Chat3ViewController.swift in Sources */,
+				5E0A1C332634204E00E1642F /* LoginViewController.swift in Sources */,
 				5EC62F9A259D27FE007CC4AE /* Chat2ViewController.swift in Sources */,
 				5EC62F99259D27FE007CC4AE /* ChatViewController.swift in Sources */,
 				5EC62FB0259D28A5007CC4AE /* Chat3TableViewCell.swift in Sources */,
@@ -454,11 +485,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				INFOPLIST_FILE = chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hassan.4.chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -472,11 +505,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.1.0;
 				INFOPLIST_FILE = chat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hassan.4.chat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -506,6 +541,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E0A1CB8263448A300E1642F /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		5E86C92B262C359200DC993C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E0A1CB9263448A300E1642F /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E0A1CB8263448A300E1642F /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
+		};
+		5E86C92C262C359200DC993C /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E86C92B262C359200DC993C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+		5E86C92E262C359200DC993C /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E86C92B262C359200DC993C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		5E86C930262C359200DC993C /* FacebookGamingServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E86C92B262C359200DC993C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookGamingServices;
+		};
+		5E86C932262C359200DC993C /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E86C92B262C359200DC993C /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5EBAAAA12595441300F4C43D /* chat.xcdatamodeld */ = {
