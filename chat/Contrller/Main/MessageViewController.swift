@@ -18,13 +18,10 @@ class MessageViewController: UIViewController , UITableViewDelegate, UITableView
         table_View.reloadData()
 
     }
-    
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         data.count
     }
-    
-    
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
